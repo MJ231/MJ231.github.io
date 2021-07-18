@@ -27,7 +27,7 @@ h1 {
     text-transform: uppercase; /* Capitalizing all h1 headings */
     font-family: "Trebuchet MS", Optima; /* Sets the font family of all h1 headings */
     text-align: center; /* Centering all h1 elements */
-    margin-top: 3%; /* Adds a small margin above h1 elements */
+    margin-top: 2%; /* Adds a small margin above h1 elements */
     color: #1a1a1a; 
 }
 
@@ -40,18 +40,18 @@ h1:hover {
 
 /* Styling for portfolio title text */
 .orange-text {
-    color: #0400ff; /* This is used to change the color of the portfolio title text */
+    color: #00ff0083; /* This is used to change the color of the portfolio title text */
     padding-top: 10vh; /* Adds padding (equal to 10% of the viewport height) to the top of the Portfolio Title text */
 }
 
 /* Paragraph elements */
 p {
-    font-family: Perpetua, Rockwell Extra Bold;
+    font-family:'Open Sans', sans-serif;
     text-align: justify; /* Justify text within paragraph elements */
-    letter-spacing: 1px; /* This expands the text slightly */
-    font-size: 24px;
-    padding-left: 20px; /* Adds padding to the left of the paragraph element */
-    padding-right: 20px; /* Adds padding to the right of the paragraph element */
+    letter-spacing: .1vw; /* This expands the text slightly */
+    font-size: 1vw;
+    padding-left: 1vw; /* Adds padding to the left of the paragraph element */
+    padding-right: 1vw; /* Adds padding to the right of the paragraph element */
 }
 
 /* Paragraph element hover effect */
@@ -89,7 +89,7 @@ img {
     filter: grayscale(75%); /* This rids our pictures of 75% of their color */
     border-radius: 8px; /* Gives all images slightly rounded corners */
     max-width: 100%; /* Ensures all images stay within the width of their container */
-    height: 340px; /* Sets the height of all images */
+    height: 100%; /* Sets the height of all images */
     display: block; /* By specifying block display we can ensure our images are able to be centered */
     margin: auto auto auto auto; /* This centers all images */
 }
@@ -196,10 +196,11 @@ footer {
 /* Texts over the video */
 .Video_Text {
     background: rgba(0, 0, 0, 0.5); /* This provides a semi-transparent background for the text to sit over */
-    color: yellow; /* Makes the font color yellow */
+    color: rgb(255, 255, 255); /* Makes the font color yellow */
     width: 100%; /* Ensures the video-text container fills the width of the video */
-    height: 100vh; /* This ensures the video-text container fills the height of the viewport so that the slideshow is not partially displayed */
-    padding-top: 2vh; /* This adds padding around the video-text container so that the background goes slightly beyond the text */
+    height: 60vh; /* This ensures the video-text container fills the height of the viewport so that the slideshow is not partially displayed */
+    padding-top: 2vh;
+    padding: 20px; /* This adds padding around the video-text container so that the background goes slightly beyond the text */
     position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
     -webkit-animation: moveVideoText 5.75s; /* Animation for Safari 4.0 - 8.0 */
     animation: moveVideoText 5.75s; /* moveVideoText animation set to 5.75s to match the movenavText animation */
